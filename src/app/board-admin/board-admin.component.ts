@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { User } from '../user';
 import { UserService } from '../_services/user.service';
 
 @Component({
@@ -8,19 +10,31 @@ import { UserService } from '../_services/user.service';
 })
 export class BoardAdminComponent implements OnInit {
 
-  content?: string;
+  users!: User[]
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,
+              private router: Router) { }
 
   ngOnInit(): void {
-    this.userService.getAdminBoard().subscribe(
+    this.getAllUser();
+  }
+
+  getAllUser(): void {
+    this.userService.getAdminBoard()
+    .subscribe(
       data => {
-        this.content = data;
+        this.users = data;
+        console.log(data);
       },
-      err => {
-        this.content = JSON.parse(err.error).message;
+      error => {
+        console.log(error);
       }
+      
     );
+  }
+
+  goToGroup(){
+    this.router.navigate(['/group']);
   }
 
 }
