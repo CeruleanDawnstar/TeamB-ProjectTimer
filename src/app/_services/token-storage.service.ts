@@ -35,6 +35,8 @@ export class TokenStorageService {
       return JSON.parse(user);
     }
 
+    console.log(user);
+
     return {};
   }
 }
