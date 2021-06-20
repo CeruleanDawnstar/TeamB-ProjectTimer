@@ -29,7 +29,7 @@ import { UpdateGroupComponent } from './groups/update-group/update-group.compone
     GroupsComponent,
     AddGroupComponent,
     UpdateGroupComponent
-  ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
