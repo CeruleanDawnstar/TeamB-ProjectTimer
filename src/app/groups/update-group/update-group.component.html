@@ -1,0 +1,48 @@
+
+<div style="width: 400px; margin: auto;">
+    <h2>Update Group</h2>
+    <div class="submit-form">
+      <div >
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              required
+              [(ngModel)]="group.name"
+              name="name"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea 
+              class="form-control" 
+              id="description" 
+              rows="3"
+              required
+              [(ngModel)]="group.description"
+              name="description"
+            >
+          </textarea>
+          </div>
+  
+          <div class="form-group">
+              <label for="user">User</label>
+              <input
+                type="user"
+                class="form-control"
+                id="user"
+                required
+                [(ngModel)]="group.user"
+                name="user"
+              />
+            </div>
+  
+        <button (click)="updateGroup()" type="submit" class="btn btn-success">Update</button>
+      </div>
+  
+    </div>
+  </div>
