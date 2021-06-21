@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TeamBProjectTimerFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# TeamB-ProjectTimer
+Web application to log passed time by project
+>>>>>>> 24ff0985a7402412dacb3e2544c51557613e8fd3
