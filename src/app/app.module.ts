@@ -28,7 +28,8 @@ import { UpdateGroupComponent } from './groups/update-group/update-group.compone
     BoardUserComponent,
     GroupsComponent,
     AddGroupComponent,
-    UpdateGroupComponent
+    UpdateGroupComponent,
+  ],
 
   imports: [
     BrowserModule,
