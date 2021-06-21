@@ -1,32 +1,43 @@
-<<<<<<< HEAD
-# TeamBProjectTimerFront
+# TeamB-ProjectTimer-Front
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+This is a web app to log passed time by project.
 
-## Development server
+# Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+First of all, make sure to have [Node](https://nodejs.org/en/) installed.
 
-## Code scaffolding
+You will also need [Docker](https://www.docker.com/) to start the container in order to make the project work.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The Angular Framework is used to generate the Front part of the project Timer.
 
-## Build
+# Launch the project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+To launch the project, first you need to clone the project repository on [Git](https://github.com/CeruleanDawnstar/TeamB-ProjectTimer-Front)
 
-## Running unit tests
+Then you use `docker-compose up` to create the container.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Sidenote
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Port used is http://localhost:4200/
 
-## Further help
+If you need to restart the container you can use :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# TeamB-ProjectTimer
-Web application to log passed time by project
->>>>>>> 24ff0985a7402412dacb3e2544c51557613e8fd3
+> `docker-compose down`
+
+And restart the server back up :
+
+> `docker-compose up --build`
+
+
+# Contributors
+Contributors of this project include :
+# [feirychris](https://github.com/feirychris)
+# [296341](https://github.com/296341)
+# [CeruleanDawnstar](https://github.com/CeruleanDawnstar)
+
+
+# How to contribute
+If you want to contribute, you can ask for a pull request. For merge and changes, open an issue; we will come back to you shortly. If approved, checkout a new branch then make sure to not have the same branch name as the branches already created. Also make sure to start your branch name with "feature/". Finally you can make a pull request, we will validate if your code is valid.
+
+Thank you !
